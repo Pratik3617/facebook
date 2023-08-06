@@ -1,0 +1,73 @@
+.feedUsersPost{
+    flex: 6;
+    .feedUsersPostWrapper{
+        padding: 2rem;
+
+        .usersPost{
+            width: 100%;
+            margin: 3rem 0;
+            border-radius: 1rem;
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            
+            .usersPostWrapper{
+                padding: 2rem;
+                .postTop {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+              
+                    .postTopLeft {
+                      display: flex;
+                      align-items: center;
+              
+                      .postProfileImg {
+                        width: 4rem;
+                        height: 4rem;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        border: 2px solid #011631;
+                        cursor: pointer;
+                      }
+              
+                      .postUsername {
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        margin: 0 1rem;
+                        cursor: pointer;
+                      }
+              
+                      .postDate {
+                        font-size: 1.2rem;
+                      }
+                    }
+              
+                    .postTopRight {
+                      .postVertButton {
+                        font-size: 3rem;
+                        color: #333;
+                        cursor: pointer;
+                      }
+                    }
+                  }
+              
+                  .postCenter {
+                    margin: 2rem 0;
+                    .postImg {
+                      width: 100%;
+                      // height: 40rem;
+                      object-fit: contain;
+                      cursor: pointer;
+                      margin-top: 1rem;
+                    }
+              
+                    .postText {
+                      margin-left: 3rem;
+                      margin-right: 3rem;
+                      font-size: 1.6rem;
+                    }
+                  }
+            }
+        }
+    }
+}

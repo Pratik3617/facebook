@@ -1,0 +1,15 @@
+.rightBar {
+  flex: 3.5;
+
+  .rightbarWrapper {
+    padding: 2rem 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .rightBar {
+    display: none;
+  }
+}

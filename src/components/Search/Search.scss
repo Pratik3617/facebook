@@ -1,0 +1,28 @@
+.search{
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: 1px solid #222;
+    position: relative;
+    .searchIcon {
+        font-size: 3rem;
+        margin-left: 1rem;
+        color: gray;
+        cursor: pointer;
+    }
+
+    .searchInput {
+        width: 80%;
+        border: none;
+        height: 3rem;
+        padding-left: 1rem;
+        font-size: 1.6rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+}

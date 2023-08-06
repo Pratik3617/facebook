@@ -1,0 +1,234 @@
+.post {
+  width: 100%;
+  margin: 3rem 0;
+  border-radius: 1rem;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+  .postWrapper {
+    padding: 2rem;
+
+    .postTop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .postTopLeft {
+        display: flex;
+        align-items: center;
+
+        .postProfileImg {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 2px solid #011631;
+          cursor: pointer;
+        }
+
+        .postUsername {
+          font-size: 1.5rem;
+          font-weight: 500;
+          margin: 0 1rem;
+          cursor: pointer;
+        }
+
+        .postDate {
+          font-size: 1.2rem;
+        }
+      }
+
+      .postTopRight {
+        .postVertButton {
+          font-size: 3rem;
+          color: #333;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .postCenter {
+      margin: 2rem 0;
+      .postImg {
+        width: 100%;
+        // height: 40rem;
+        object-fit: contain;
+        cursor: pointer;
+        margin-top: 1rem;
+      }
+
+      .postText {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        font-size: 1.6rem;
+      }
+    }
+
+    .postBottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .postBottomLeft {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .bottomLeftIcon {
+          font-size: 3rem;
+          cursor: pointer;
+        }
+
+        .postLikeCounter {
+          font-size: 1.5rem;
+        }
+      }
+
+      .postBottomRight {
+        .postCommentText {
+          font-size: 1.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footerHr {
+      margin: 1rem 0;
+    }
+
+    .postBottomFooter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .postBottomFooterItem {
+        display: flex;
+        align-items: center;
+        padding: 7px 14px;
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 5px;
+
+        .footerIcon {
+          font-size: 3rem;
+          color: #333;
+          margin-right: 1rem;
+        }
+
+        .footerText {
+          font-weight: 500;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .postBottomFooterItem:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  .commentBox{
+    display: flex;
+
+    .commentInput{
+        display: flex;
+        flex: 1;
+        width: 75%;
+        background: transparent;
+        color: black;
+        border: 1px solid #011631;
+        padding: 10px 5px 0px 5px;
+        margin: 0px 0px 20px 20px;
+        outline: none;
+    }
+
+    .commentPost{
+        display: flex;
+        padding: 1rem 2.5rem;
+        background-color: #011631;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin: 0rem 2rem 2rem 0rem;
+        border: none;
+        cursor: pointer;
+
+        &:disabled{
+            cursor: not-allowed;
+            background-color: #011631a4;
+        }
+    }
+}
+
+.comment{
+    width: 100%;
+    max-height: 25rem;
+    overflow-y: scroll;
+
+    .commentWrapper{
+        display: flex;
+        align-items: center;
+        // border-top: 1px dashed #011631;
+        width: 90%;
+        margin: auto;
+
+        .commentProfileImg{
+            display: flex;
+            margin: 2rem .7rem 2rem 1rem;
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            border: 2px solid #011631;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .commentInfo{
+            padding: 2rem 0;
+            max-width: 80%;
+
+            .commentUsername{
+              font-size: 1.4rem;
+              font-weight: 600;
+              cursor: pointer;
+            }
+
+            .commentText{
+              font-size: 1.4rem;
+              background-color: #011631;
+              color: white;
+              padding: 1rem;
+              margin-top: 3px;
+              border-radius: 3rem;
+            }
+        }
+    }
+}
+
+}
+
+@media only screen and (max-width: 576px) {
+  .post {
+    .postWrapper {
+      .postCenter {
+        .postImg {
+          margin-top: 0rem;
+          height: 25rem;
+        }
+        .postText {
+          margin-left: 0rem;
+          margin-right: 0rem;
+        }
+      }
+
+      .postBottomFooter{
+        .postBottomFooterItem{
+          .footerIcon{
+            font-size: 1.8rem;
+          }
+          .footerText{
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}

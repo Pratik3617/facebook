@@ -1,0 +1,15 @@
+.feed {
+  flex: 6;
+  .feedWrapper {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .feed {
+    overflow-x: hidden;
+    .feedWrapper {
+      padding: 1rem;
+    }
+  }
+}

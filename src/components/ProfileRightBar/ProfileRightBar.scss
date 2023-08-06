@@ -1,0 +1,47 @@
+.profileRightbar {
+  flex: 3.5;
+  padding: 0 2rem 0 0;
+
+  .profileRightbarHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+
+    .profileRightbarTitle {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    .editButton {
+      border: none;
+      font-size: 1.4rem;
+      padding: 7px;
+      border-radius: 5px;
+      background-color: #011631;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  .profileRightbarInfo {
+    margin-bottom: 3rem;
+  }
+
+  .profileRightbarTitle {
+    font-size: 1.6rem;
+  }
+
+  .profileRightbarFollowings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .profileRightbar {
+    display: none;
+  }
+}

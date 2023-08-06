@@ -1,0 +1,108 @@
+.profile {
+  width: 100%;
+  overflow-x: hidden;
+  .profileWrapper {
+    display: flex;
+
+    .profileRight {
+      flex: 9.5;
+
+      .profileRightTop{
+        .profileCover {
+          height: 32rem;
+          position: relative;
+  
+          .profileCoverImg {
+            width: 100%;
+            height: 25rem;
+            object-fit: cover;
+          }
+  
+          .profileUserImg {
+            position: absolute;
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            left: 0;
+            right: 0;
+            top: 15rem;
+            margin: auto;
+            object-fit: cover;
+            border: 3px solid #fff;
+          }
+        }
+      }
+      
+
+      .profileInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .profileInfoName {
+          text-transform: capitalize;
+          font-size: 2.4rem;
+        }
+
+        .profileInfoDesc {
+          font-weight: 300;
+          font-size: 1.6rem;
+        }
+      }
+
+      .profileRightBottom {
+        display: flex;
+        
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .profile{
+    .profileWrapper{
+      .profileRight{
+        .profileInfo{
+          width: 91%;
+        }
+        .profileRightTop{
+          .profileCover{
+            .profileCoverImg{
+              width: 91.5%;
+            }
+            .profileUserImg{
+              left: -4rem;
+            }
+          }
+        }
+      }
+      .profileRightBottom{
+        .feedUsersPost{
+          .feedUsersPostWrapper{
+            padding: 1rem;
+            width: 91%;
+            .stories{
+              .storyCard{
+                .overlay{
+                  width: 95%;
+                }
+                .storyBackground{
+                  width: 95%;
+                }
+              }
+            }
+            .share{
+              .shareWrapper{
+                .emoji{
+                  width: 35rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,88 @@
+.chatBlock {
+    flex: 6;
+    .chatBlockWrapper {
+      padding: 0rem 2rem 0rem 0rem;
+
+      .chatTop{
+        flex: 6;
+        padding: 2rem;
+        margin-top: .5rem;
+        position: sticky;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 1rem 1rem 0rem 0rem;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.8);
+        border-left: 1px solid #d6d1d1;
+        border-right: 1px solid #d6d1d1;
+      
+        .chatProfileContainer{
+          display: flex;
+          align-items: center;
+          .chatProfileImg{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            margin-right: 2rem;
+            overflow-y: auto;
+            object-fit: cover;
+          }
+  
+          .profileName{
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #011631;
+          }
+        }
+
+        .ChatIconContainer{
+          display: flex;
+          align-items: center;
+          
+          .chatIconItem{
+            width: 4rem;
+            .chaticon{
+              font-size: 3rem;
+              cursor: pointer;
+              font-weight: 600;
+              color: #011631;
+            }
+          }
+        }
+      }
+      
+      .chatCenter{
+        padding: 2rem;
+        overflow-y: auto;
+        height:52rem;
+        border-left: 1px solid #d6d1d1;
+        border-right: 1px solid #d6d1d1;
+        p{
+          font-size: 2rem;
+        }
+      }
+      .chatBottom{
+        padding: 1rem 2rem;
+        background-color: #011631;
+        height: 7rem;
+        position: sticky;
+        z-index: 10;
+        border-radius: 0rem 0rem 1rem 1rem;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .chatBlock {
+      .chatBlockWrapper {
+        padding: 0rem;
+
+        .chatCenter{
+          height: 45.5rem;
+        }
+      }
+    }
+  }
+  

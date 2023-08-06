@@ -1,0 +1,209 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d4d9e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .registerWrapper {
+    width: 80%;
+    display: flex;
+
+    .registerLeft {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin: 0 2rem;
+      justify-content: center;
+
+      .registerLogo {
+        font-size: 6rem;
+        font-weight: 800;
+        color: #011631;
+        margin-bottom: 1rem;
+      }
+
+      .registerDesc {
+        font-size: 2.8rem;
+      }
+    }
+
+    .registerRight {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin: 0 2rem;
+      justify-content: center;
+
+      .registerBox {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 1rem;
+
+        .top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 3rem;
+
+          .profileImg {
+            display: flex;
+            width: 7rem;
+            height: 7rem;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .formInput {
+            display: flex;
+            align-items: center;
+
+            label {
+              display: flex;
+              align-items: center;
+              font-size: 1.6rem;
+
+              .icon {
+                font-size: 3.4rem;
+                color: #333;
+                margin-left: 1rem;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .bottom {
+          .bottomBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0.5rem 4rem 1rem 4rem;
+            border-radius: 1rem;
+            background-color: #fff;
+
+            .registerInput {
+              height: 5rem;
+              border-radius: 1rem;
+              padding-left: 2rem;
+              font-size: 1.8rem;
+              border: 1px solid gray;
+              margin-bottom: 3rem;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            .registerButton {
+              height: 5rem;
+              width: 100%;
+              background-color: #011631;
+              color: #fff;
+              font-weight: 500;
+              font-size: 2.3rem;
+              border-radius: 1rem;
+              border: none;
+              margin-bottom: 2rem;
+              cursor: pointer;
+            }
+
+            .loginRegisterButton {
+              height: 5rem;
+              width: 100%;
+              background-color: #42b72a;
+              color: #fff;
+              font-weight: 500;
+              font-size: 2.3rem;
+              border-radius: 1rem;
+              border: none;
+              margin-bottom: 3rem;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .register{
+    align-items: flex-start;
+    .registerWrapper{
+      margin-top: 3rem;
+      flex-direction: column;
+
+      .registerLeft{
+        .registerLogo{
+          font-size: 4rem;
+        }
+
+        .registerDesc{
+          font-size: 2rem;
+        }
+      }
+
+      .registerRight{
+        .registerBox{
+          margin-top: 3rem;
+
+          .top{
+            margin: 1.5rem;
+          }
+
+          .bottom{
+            .bottomBox{
+              .registerInput{
+                margin-bottom: 1.5rem;
+              }
+
+              .registerButton{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:576px) {
+  .register{
+    align-items: flex-start;
+    .registerWrapper{
+      margin-top: 5rem;
+      flex-direction: column;
+      width: 100%;
+
+      .loginLeft{
+        .loginLogo{
+          font-size: 4rem;
+        }
+
+        .loginDesc{
+          font-size: 1.8rem;
+        }
+      }
+
+      .loginRight{
+        .bottomBox{
+          margin-top: 5rem;
+          width: 100%;
+
+          .loginButton{
+            font-size: 2rem;
+          }
+
+          .loginRegisterButton{
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

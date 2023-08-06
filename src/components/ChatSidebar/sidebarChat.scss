@@ -1,0 +1,16 @@
+.chatSidebar {
+    flex: 3;
+    height: calc(100vh - 5rem);
+    position: sticky;
+    top: 5rem;
+  
+    .chatSidebarWrapper {
+      padding: 2rem;
+    }
+}
+  
+@media only screen and (max-width: 768px) {
+  .chatSidebar {
+    display: none;
+  }
+}

@@ -1,0 +1,113 @@
+.dialogChat {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 40rem;
+    padding: 1.5rem;
+    top: 7rem;
+    left: 72vw;
+    height: 82vh;
+    border: none;
+    border-radius: 1rem 0rem 1rem 1rem;
+    overflow-y: scroll;
+    margin-bottom: 1rem;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+
+        h2{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .topIcons{
+            .icon{
+                font-size: 3rem;
+                margin-left: 2rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .center{
+        margin-top: 2rem;
+        position: sticky;
+        .searchChats{
+            width: 100%;
+            height: 4rem;
+            border-radius: 2rem;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            border: 1px solid #222;
+            position: relative;
+        }
+        
+        .messengerIcon {
+            font-size: 3rem;
+            margin-left: 1rem;
+            color: gray;
+            cursor: pointer;
+        }
+
+        .messageSearchInput {
+            width: 80%;
+            border: none;
+            height: 3rem;
+            padding-left: 1rem;
+            font-size: 1.6rem;
+    
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .bottom{
+        overflow-y: scroll;
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .dialogChat{
+        top: 6rem;
+        left: 75rem;
+        width: 34rem;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .dialogChat{
+        top: 6rem;
+        left: 52rem;
+        width: 34rem;
+        border-radius: 5px;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .dialogChat{
+        top: 6rem;
+        left: 25rem;
+        width: 34rem;
+        height: 55rem;
+        border-radius: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .dialogChat{
+        top: 6rem;
+        left: 10px;
+        width: 34rem;
+        height: 50rem;
+        border-radius: 5px;
+    }
+}

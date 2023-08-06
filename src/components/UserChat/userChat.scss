@@ -1,0 +1,50 @@
+.userChat{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+
+    .chatImage{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+        object-fit: cover;
+    }
+
+    .chatInfo{
+        .messengerName{
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #222;
+        }
+
+        .chatMessage{
+            font-size: 1.4rem;
+            color: gray;
+        }
+    }
+
+    &:hover{
+        background-color: #011631;
+        cursor: pointer;
+        .chatInfo{
+            .messengerName{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.searched{
+    background-color: rgb(203, 201, 201);
+    .chatInfo{
+        .messengerName{
+            color: #fff;
+        }
+        .chatMessage{
+            display: none;
+        }
+    }
+}

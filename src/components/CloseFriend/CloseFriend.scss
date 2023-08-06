@@ -1,0 +1,19 @@
+.profileRightbarFollowing {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  cursor: pointer;
+
+  .profileRightbarFollowingImg {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .profileRightbarFollowingName {
+    font-size: 1.6rem;
+    align-self: center;
+    margin-top: 5px;
+  }
+}
